@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties PUBLIC "-//JTRS//DTD SCA V2.2.2 PRF//EN" "properties.dtd">
+<properties>
+  <struct id="geolocation" mode="readwrite" name="geolocation">
+    <simple id="geolocation::lat" name="lat" type="double"/>
+    <simple id="geolocation::lon" mode="readwrite" name="lon" type="double">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="geolocation::majoraxis" mode="readwrite" name="majoraxis" type="double">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="geolocation::minoraxis" mode="readwrite" name="minoraxis" type="double">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="geolocation::confidence" mode="readwrite" name="confidence" type="string">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+  <simple id="update_rate" mode="readwrite" name="update_rate" type="float">
+    <value>1</value>
+    <kind kindtype="property"/>
+    <action type="external"/>
+  </simple>
+</properties>
