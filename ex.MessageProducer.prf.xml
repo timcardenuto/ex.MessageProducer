@@ -3,22 +3,10 @@
 <properties>
   <struct id="geolocation" mode="readwrite" name="geolocation">
     <simple id="geolocation::lat" name="lat" type="double"/>
-    <simple id="geolocation::lon" mode="readwrite" name="lon" type="double">
-      <kind kindtype="property"/>
-      <action type="external"/>
-    </simple>
-    <simple id="geolocation::majoraxis" mode="readwrite" name="majoraxis" type="double">
-      <kind kindtype="property"/>
-      <action type="external"/>
-    </simple>
-    <simple id="geolocation::minoraxis" mode="readwrite" name="minoraxis" type="double">
-      <kind kindtype="property"/>
-      <action type="external"/>
-    </simple>
-    <simple id="geolocation::confidence" mode="readwrite" name="confidence" type="string">
-      <kind kindtype="property"/>
-      <action type="external"/>
-    </simple>
+    <simple id="geolocation::lon" mode="readwrite" name="lon" type="double"/>
+    <simple id="geolocation::majoraxis" mode="readwrite" name="majoraxis" type="double"/>
+    <simple id="geolocation::minoraxis" mode="readwrite" name="minoraxis" type="double"/>
+    <simple id="geolocation::confidence" mode="readwrite" name="confidence" type="string"/>
     <configurationkind kindtype="message"/>
   </struct>
   <simple id="update_rate" mode="readwrite" name="update_rate" type="float">
